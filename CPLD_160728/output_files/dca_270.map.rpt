@@ -1,5 +1,5 @@
 Analysis & Synthesis report for dca_270
-Thu Jul 28 16:50:53 2016
+Tue Aug 23 15:40:27 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -43,7 +43,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                   ;
 +-----------------------------+--------------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Thu Jul 28 16:50:53 2016            ;
+; Analysis & Synthesis Status ; Successful - Tue Aug 23 15:40:27 2016            ;
 ; Quartus II 64-Bit Version   ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Full Version ;
 ; Revision Name               ; dca_270                                          ;
 ; Top-level Entity Name       ; dca_270                                          ;
@@ -261,7 +261,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Jul 28 16:50:52 2016
+    Info: Processing started: Tue Aug 23 15:40:26 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off dca_270 -c dca_270
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file yx_judge.v
@@ -278,7 +278,7 @@ Info (21057): Implemented 232 device resources after synthesis - the final resou
     Info (21061): Implemented 176 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 459 megabytes
-    Info: Processing ended: Thu Jul 28 16:50:53 2016
+    Info: Processing ended: Tue Aug 23 15:40:27 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

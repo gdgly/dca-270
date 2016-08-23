@@ -198,7 +198,8 @@ begin
 	endcase
 end
 
-assign {io_led_charge, io_led_discharge} = state_out;
+//assign {io_led_charge, io_led_discharge} = state_out;
+assign {io_led_discharge, io_led_charge} = state_out;
 
 //---------------------------------------------------------------------------------------------------------------------------------
 //	DIO logic, 8 bit data bus.

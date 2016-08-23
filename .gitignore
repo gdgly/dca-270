@@ -1,4 +1,31 @@
-#忽略后缀为bak的文件
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
 *.bak
 
+#Quartus II files
+db/*
+graybox_tmp/*
+incremental_db/*
+output_files/*
+
+db/
+graybox_tmp/
+incremental_db/
+output_files/
 

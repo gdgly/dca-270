@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for dca_270
-Thu Jul 28 16:51:00 2016
+Tue Aug 23 15:40:33 2016
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
 
 
@@ -93,7 +93,7 @@ applicable agreement for further details.
 +---------------+--------+--------------------------+
 ; SDC File Path ; Status ; Read at                  ;
 +---------------+--------+--------------------------+
-; dca_270.sdc   ; OK     ; Thu Jul 28 16:51:00 2016 ;
+; dca_270.sdc   ; OK     ; Tue Aug 23 15:40:33 2016 ;
 +---------------+--------+--------------------------+
 
 
@@ -106,13 +106,13 @@ applicable agreement for further details.
 +------------+------+--------+-----------+-------+--------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+--------------+
 
 
-+--------------------------------------------------+
-; Fmax Summary                                     ;
-+------------+-----------------+------------+------+
-; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
-+------------+-----------------+------------+------+
-; 103.14 MHz ; 103.14 MHz      ; fpga_clk   ;      ;
-+------------+-----------------+------------+------+
++-------------------------------------------------+
+; Fmax Summary                                    ;
++-----------+-----------------+------------+------+
+; Fmax      ; Restricted Fmax ; Clock Name ; Note ;
++-----------+-----------------+------------+------+
+; 93.45 MHz ; 93.45 MHz       ; fpga_clk   ;      ;
++-----------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -121,7 +121,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+--------+---------------+
 ; Clock    ; Slack  ; End Point TNS ;
 +----------+--------+---------------+
-; fpga_clk ; 31.971 ; 0.000         ;
+; fpga_clk ; 30.966 ; 0.000         ;
 +----------+--------+---------------+
 
 
@@ -130,7 +130,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +----------+-------+---------------+
 ; Clock    ; Slack ; End Point TNS ;
 +----------+-------+---------------+
-; fpga_clk ; 1.667 ; 0.000         ;
+; fpga_clk ; 1.639 ; 0.000         ;
 +----------+-------+---------------+
 
 
@@ -160,106 +160,106 @@ No paths to report.
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
-; 31.971 ; buzzer_cnt[2]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.363      ;
-; 32.076 ; buzzer_cnt[0]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.258      ;
-; 32.383 ; buzzer_cnt[8]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.951      ;
-; 32.405 ; buzzer_cnt[2]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.929      ;
-; 32.447 ; buzzer_cnt[2]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.887      ;
-; 32.510 ; buzzer_cnt[0]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.824      ;
-; 32.535 ; buzzer_cnt[2]  ; buzzer_cnt[15] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.799      ;
-; 32.547 ; buzzer_cnt[7]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.787      ;
-; 32.552 ; buzzer_cnt[0]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.782      ;
-; 32.605 ; buzzer_cnt[2]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.729      ;
-; 32.640 ; buzzer_cnt[0]  ; buzzer_cnt[15] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.694      ;
-; 32.682 ; buzzer_cnt[16] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.652      ;
-; 32.710 ; buzzer_cnt[0]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.624      ;
-; 32.760 ; buzzer_cnt[1]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.574      ;
-; 32.817 ; buzzer_cnt[8]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.517      ;
-; 32.859 ; buzzer_cnt[8]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.475      ;
-; 32.947 ; buzzer_cnt[8]  ; buzzer_cnt[15] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.387      ;
-; 32.976 ; buzzer_cnt[6]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.358      ;
-; 32.981 ; buzzer_cnt[7]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.353      ;
-; 33.017 ; buzzer_cnt[8]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.317      ;
-; 33.023 ; buzzer_cnt[7]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.311      ;
-; 33.026 ; buzzer_cnt[2]  ; buzzer_cnt[10] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.308      ;
-; 33.037 ; buzzer_cnt[9]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.297      ;
-; 33.059 ; buzzer_cnt[2]  ; buzzer_cnt[19] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.275      ;
-; 33.074 ; buzzer_cnt[2]  ; buzzer_cnt[17] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.260      ;
-; 33.095 ; buzzer_cnt[11] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.239      ;
-; 33.098 ; buzzer_cnt[2]  ; buzzer_cnt[11] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.236      ;
-; 33.111 ; buzzer_cnt[7]  ; buzzer_cnt[15] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.223      ;
-; 33.116 ; buzzer_cnt[16] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.218      ;
-; 33.131 ; buzzer_cnt[0]  ; buzzer_cnt[10] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.203      ;
-; 33.146 ; buzzer_cnt[12] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.188      ;
-; 33.158 ; buzzer_cnt[16] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.176      ;
-; 33.164 ; buzzer_cnt[0]  ; buzzer_cnt[19] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.170      ;
-; 33.179 ; buzzer_cnt[0]  ; buzzer_cnt[17] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.155      ;
-; 33.181 ; buzzer_cnt[7]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.153      ;
-; 33.194 ; buzzer_cnt[1]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.140      ;
-; 33.203 ; buzzer_cnt[0]  ; buzzer_cnt[11] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.131      ;
-; 33.225 ; buzzer_cnt[13] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.109      ;
-; 33.236 ; buzzer_cnt[1]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.098      ;
-; 33.274 ; buzzer_cnt[2]  ; buzzer_cnt[8]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.060      ;
-; 33.274 ; buzzer_cnt[10] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.060      ;
-; 33.324 ; buzzer_cnt[1]  ; buzzer_cnt[15] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.010      ;
-; 33.351 ; buzzer_cnt[2]  ; buzzer_cnt[9]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.983      ;
-; 33.356 ; buzzer_cnt[14] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.978      ;
-; 33.379 ; buzzer_cnt[0]  ; buzzer_cnt[8]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.955      ;
-; 33.394 ; buzzer_cnt[1]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.940      ;
-; 33.410 ; buzzer_cnt[6]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.924      ;
-; 33.452 ; buzzer_cnt[6]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.882      ;
-; 33.452 ; buzzer_cnt[15] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.882      ;
-; 33.456 ; buzzer_cnt[0]  ; buzzer_cnt[9]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.878      ;
-; 33.471 ; buzzer_cnt[9]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.863      ;
-; 33.471 ; buzzer_cnt[8]  ; buzzer_cnt[19] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.863      ;
-; 33.486 ; buzzer_cnt[8]  ; buzzer_cnt[17] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.848      ;
-; 33.513 ; buzzer_cnt[9]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.821      ;
-; 33.529 ; buzzer_cnt[11] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.805      ;
-; 33.536 ; buzzer_cnt[0]  ; buzzer_cnt[2]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.798      ;
-; 33.540 ; buzzer_cnt[6]  ; buzzer_cnt[15] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.794      ;
-; 33.547 ; buzzer_cnt[2]  ; buzzer_cnt[7]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.787      ;
-; 33.571 ; buzzer_cnt[11] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.763      ;
-; 33.573 ; buzzer_cnt[2]  ; buzzer_cnt[21] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.761      ;
-; 33.580 ; buzzer_cnt[12] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.754      ;
-; 33.586 ; buzzer_cnt[2]  ; buzzer_cnt[22] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.748      ;
-; 33.601 ; buzzer_cnt[9]  ; buzzer_cnt[15] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.733      ;
-; 33.610 ; buzzer_cnt[6]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.724      ;
-; 33.614 ; buzzer_cnt[2]  ; buzzer_cnt[14] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.720      ;
-; 33.622 ; buzzer_cnt[12] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.712      ;
-; 33.635 ; buzzer_cnt[7]  ; buzzer_cnt[19] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.699      ;
-; 33.650 ; buzzer_cnt[7]  ; buzzer_cnt[17] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.684      ;
-; 33.652 ; buzzer_cnt[0]  ; buzzer_cnt[7]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.682      ;
-; 33.656 ; buzzer_cnt[3]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.678      ;
-; 33.659 ; buzzer_cnt[11] ; buzzer_cnt[15] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.675      ;
-; 33.659 ; buzzer_cnt[13] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.675      ;
-; 33.671 ; buzzer_cnt[9]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.663      ;
-; 33.678 ; buzzer_cnt[0]  ; buzzer_cnt[21] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.656      ;
-; 33.684 ; buzzer_cnt[2]  ; buzzer_cnt[12] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.650      ;
-; 33.691 ; buzzer_cnt[0]  ; buzzer_cnt[22] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.643      ;
-; 33.698 ; buzzer_cnt[2]  ; buzzer_cnt[18] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.636      ;
-; 33.701 ; buzzer_cnt[13] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.633      ;
-; 33.708 ; buzzer_cnt[10] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.626      ;
-; 33.719 ; buzzer_cnt[0]  ; buzzer_cnt[14] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.615      ;
-; 33.729 ; buzzer_cnt[11] ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.605      ;
-; 33.750 ; buzzer_cnt[10] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.584      ;
-; 33.770 ; buzzer_cnt[16] ; buzzer_cnt[19] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.564      ;
-; 33.777 ; buzzer_cnt[4]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.557      ;
-; 33.785 ; buzzer_cnt[16] ; buzzer_cnt[17] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.549      ;
-; 33.789 ; buzzer_cnt[0]  ; buzzer_cnt[12] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.545      ;
-; 33.790 ; buzzer_cnt[14] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.544      ;
-; 33.803 ; buzzer_cnt[0]  ; buzzer_cnt[18] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.531      ;
-; 33.815 ; buzzer_cnt[2]  ; buzzer_cnt[13] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.519      ;
-; 33.815 ; buzzer_cnt[1]  ; buzzer_cnt[10] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.519      ;
-; 33.832 ; buzzer_cnt[14] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.502      ;
-; 33.838 ; buzzer_cnt[10] ; buzzer_cnt[15] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.496      ;
-; 33.848 ; buzzer_cnt[1]  ; buzzer_cnt[19] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.486      ;
-; 33.863 ; buzzer_cnt[1]  ; buzzer_cnt[17] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.471      ;
-; 33.886 ; buzzer_cnt[15] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.448      ;
-; 33.887 ; buzzer_cnt[1]  ; buzzer_cnt[11] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.447      ;
-; 33.902 ; buzzer_cnt[5]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.432      ;
-; 33.908 ; buzzer_cnt[10] ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.426      ;
-; 33.920 ; buzzer_cnt[0]  ; buzzer_cnt[13] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.414      ;
-; 33.928 ; buzzer_cnt[15] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.406      ;
+; 30.966 ; buzzer_cnt[0]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 10.368     ;
+; 31.214 ; buzzer_cnt[1]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 10.120     ;
+; 31.471 ; buzzer_cnt[0]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.863      ;
+; 31.609 ; buzzer_cnt[2]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.725      ;
+; 31.643 ; buzzer_cnt[9]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.691      ;
+; 31.719 ; buzzer_cnt[1]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.615      ;
+; 31.888 ; buzzer_cnt[10] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.446      ;
+; 31.976 ; buzzer_cnt[0]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.358      ;
+; 31.985 ; buzzer_cnt[0]  ; buzzer_cnt[7]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.349      ;
+; 32.042 ; buzzer_cnt[0]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.292      ;
+; 32.105 ; buzzer_cnt[12] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.229      ;
+; 32.110 ; buzzer_cnt[8]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.224      ;
+; 32.111 ; buzzer_cnt[7]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.223      ;
+; 32.114 ; buzzer_cnt[2]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.220      ;
+; 32.143 ; buzzer_cnt[6]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.191      ;
+; 32.148 ; buzzer_cnt[9]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.186      ;
+; 32.153 ; buzzer_cnt[0]  ; buzzer_cnt[10] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.181      ;
+; 32.224 ; buzzer_cnt[1]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.110      ;
+; 32.233 ; buzzer_cnt[1]  ; buzzer_cnt[7]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.101      ;
+; 32.233 ; buzzer_cnt[13] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.101      ;
+; 32.290 ; buzzer_cnt[1]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 9.044      ;
+; 32.393 ; buzzer_cnt[10] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.941      ;
+; 32.401 ; buzzer_cnt[1]  ; buzzer_cnt[10] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.933      ;
+; 32.435 ; buzzer_cnt[11] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.899      ;
+; 32.569 ; buzzer_cnt[14] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.765      ;
+; 32.582 ; buzzer_cnt[16] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.752      ;
+; 32.610 ; buzzer_cnt[12] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.724      ;
+; 32.615 ; buzzer_cnt[8]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.719      ;
+; 32.616 ; buzzer_cnt[7]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.718      ;
+; 32.619 ; buzzer_cnt[2]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.715      ;
+; 32.628 ; buzzer_cnt[2]  ; buzzer_cnt[7]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.706      ;
+; 32.648 ; buzzer_cnt[6]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.686      ;
+; 32.653 ; buzzer_cnt[9]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.681      ;
+; 32.675 ; buzzer_cnt[15] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.659      ;
+; 32.685 ; buzzer_cnt[2]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.649      ;
+; 32.719 ; buzzer_cnt[9]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.615      ;
+; 32.732 ; buzzer_cnt[0]  ; buzzer_cnt[18] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.602      ;
+; 32.738 ; buzzer_cnt[13] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.596      ;
+; 32.740 ; buzzer_cnt[20] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.594      ;
+; 32.746 ; buzzer_cnt[0]  ; buzzer_cnt[17] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.588      ;
+; 32.765 ; buzzer_cnt[0]  ; buzzer_cnt[11] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.569      ;
+; 32.771 ; buzzer_cnt[3]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.563      ;
+; 32.796 ; buzzer_cnt[2]  ; buzzer_cnt[10] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.538      ;
+; 32.871 ; buzzer_cnt[0]  ; buzzer_cnt[19] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.463      ;
+; 32.894 ; buzzer_cnt[4]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.440      ;
+; 32.898 ; buzzer_cnt[10] ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.436      ;
+; 32.940 ; buzzer_cnt[11] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.394      ;
+; 32.964 ; buzzer_cnt[10] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.370      ;
+; 32.980 ; buzzer_cnt[1]  ; buzzer_cnt[18] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.354      ;
+; 32.992 ; buzzer_cnt[0]  ; buzzer_cnt[8]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.342      ;
+; 32.994 ; buzzer_cnt[1]  ; buzzer_cnt[17] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.340      ;
+; 33.013 ; buzzer_cnt[1]  ; buzzer_cnt[11] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.321      ;
+; 33.016 ; buzzer_cnt[5]  ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.318      ;
+; 33.069 ; buzzer_cnt[17] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.265      ;
+; 33.074 ; buzzer_cnt[14] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.260      ;
+; 33.087 ; buzzer_cnt[16] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.247      ;
+; 33.119 ; buzzer_cnt[1]  ; buzzer_cnt[19] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.215      ;
+; 33.120 ; buzzer_cnt[8]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.214      ;
+; 33.121 ; buzzer_cnt[17] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.213      ;
+; 33.121 ; buzzer_cnt[7]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.213      ;
+; 33.122 ; buzzer_cnt[18] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.212      ;
+; 33.153 ; buzzer_cnt[6]  ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.181      ;
+; 33.162 ; buzzer_cnt[6]  ; buzzer_cnt[7]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.172      ;
+; 33.174 ; buzzer_cnt[18] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.160      ;
+; 33.180 ; buzzer_cnt[15] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.154      ;
+; 33.181 ; buzzer_cnt[12] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.153      ;
+; 33.186 ; buzzer_cnt[8]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.148      ;
+; 33.187 ; buzzer_cnt[7]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.147      ;
+; 33.219 ; buzzer_cnt[6]  ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.115      ;
+; 33.226 ; buzzer_cnt[0]  ; buzzer_cnt[1]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.108      ;
+; 33.240 ; buzzer_cnt[1]  ; buzzer_cnt[8]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.094      ;
+; 33.276 ; buzzer_cnt[3]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.058      ;
+; 33.288 ; buzzer_cnt[0]  ; buzzer_cnt[6]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.046      ;
+; 33.309 ; buzzer_cnt[13] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.025      ;
+; 33.311 ; buzzer_cnt[20] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.023      ;
+; 33.325 ; buzzer_cnt[12] ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.009      ;
+; 33.330 ; buzzer_cnt[6]  ; buzzer_cnt[10] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 8.004      ;
+; 33.346 ; buzzer_cnt[0]  ; buzzer_cnt[9]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.988      ;
+; 33.375 ; buzzer_cnt[2]  ; buzzer_cnt[18] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.959      ;
+; 33.387 ; buzzer_cnt[9]  ; buzzer_cnt[10] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.947      ;
+; 33.389 ; buzzer_cnt[2]  ; buzzer_cnt[17] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.945      ;
+; 33.399 ; buzzer_cnt[4]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.935      ;
+; 33.404 ; buzzer_cnt[0]  ; buzzer_cnt[15] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.930      ;
+; 33.408 ; buzzer_cnt[2]  ; buzzer_cnt[11] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.926      ;
+; 33.409 ; buzzer_cnt[9]  ; buzzer_cnt[18] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.925      ;
+; 33.423 ; buzzer_cnt[9]  ; buzzer_cnt[17] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.911      ;
+; 33.445 ; buzzer_cnt[11] ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.889      ;
+; 33.453 ; buzzer_cnt[13] ; buzzer_cnt[16] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.881      ;
+; 33.454 ; buzzer_cnt[0]  ; buzzer_cnt[21] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.880      ;
+; 33.466 ; buzzer_cnt[19] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.868      ;
+; 33.467 ; buzzer_cnt[0]  ; buzzer_cnt[22] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.867      ;
+; 33.483 ; buzzer_cnt[0]  ; buzzer_cnt[13] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.851      ;
+; 33.491 ; buzzer_cnt[20] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.843      ;
+; 33.504 ; buzzer_cnt[0]  ; buzzer_cnt[14] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.830      ;
+; 33.511 ; buzzer_cnt[11] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.823      ;
+; 33.514 ; buzzer_cnt[2]  ; buzzer_cnt[19] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.820      ;
+; 33.518 ; buzzer_cnt[19] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.816      ;
+; 33.521 ; buzzer_cnt[5]  ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.813      ;
+; 33.536 ; buzzer_cnt[1]  ; buzzer_cnt[6]  ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.798      ;
+; 33.548 ; buzzer_cnt[9]  ; buzzer_cnt[19] ; fpga_clk     ; fpga_clk    ; 41.667       ; 0.000      ; 7.786      ;
 +--------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -268,22 +268,18 @@ No paths to report.
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node      ; To Node        ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
+; 1.639 ; clk_1mhz_reg   ; clk_1mhz_reg   ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.860      ;
+; 1.650 ; buzzer_cnt[0]  ; buzzer_cnt[0]  ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.871      ;
 ; 1.667 ; wdg_cnt[0]     ; wdg_cnt[0]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.888      ;
-; 1.706 ; dio_en         ; dio_en         ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.927      ;
-; 1.714 ; buzzer_cnt[24] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.935      ;
-; 1.715 ; buzzer_cnt[24] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.936      ;
-; 1.722 ; clk_cnt[2]     ; clk_cnt[2]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.943      ;
-; 1.722 ; buzzer_cnt[24] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.943      ;
-; 1.723 ; clk_cnt[2]     ; clk_cnt[0]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.944      ;
-; 1.724 ; clk_cnt[2]     ; clk_cnt[1]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.945      ;
-; 1.733 ; clk_cnt[2]     ; clk_1mhz_reg   ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.954      ;
-; 1.734 ; clk_cnt[2]     ; clk_cnt[3]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.955      ;
-; 1.907 ; buzzer_cnt[0]  ; buzzer_cnt[0]  ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.128      ;
-; 1.996 ; clk_cnt[3]     ; clk_cnt[3]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.217      ;
-; 2.007 ; clk_cnt[3]     ; clk_1mhz_reg   ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.228      ;
-; 2.017 ; clk_cnt[3]     ; clk_cnt[1]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.238      ;
-; 2.018 ; clk_cnt[3]     ; clk_cnt[2]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.239      ;
-; 2.019 ; clk_cnt[3]     ; clk_cnt[0]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.240      ;
+; 1.709 ; dio_en         ; dio_en         ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.930      ;
+; 1.739 ; clk_cnt[1]     ; clk_cnt[1]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.960      ;
+; 1.741 ; clk_cnt[1]     ; clk_cnt[2]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.962      ;
+; 1.743 ; clk_cnt[1]     ; clk_cnt[3]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 1.964      ;
+; 2.007 ; clk_cnt[2]     ; clk_cnt[2]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.228      ;
+; 2.018 ; clk_cnt[2]     ; clk_1mhz_reg   ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.239      ;
+; 2.020 ; clk_cnt[2]     ; clk_cnt[1]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.241      ;
+; 2.025 ; clk_cnt[2]     ; clk_cnt[3]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.246      ;
+; 2.027 ; clk_cnt[2]     ; clk_cnt[0]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.248      ;
 ; 2.107 ; wdg_cnt[17]    ; wdg_cnt[17]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.328      ;
 ; 2.108 ; wdg_cnt[4]     ; wdg_cnt[4]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.329      ;
 ; 2.116 ; wdg_cnt[7]     ; wdg_cnt[7]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.337      ;
@@ -295,29 +291,33 @@ No paths to report.
 ; 2.126 ; wdg_cnt[8]     ; wdg_cnt[8]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.347      ;
 ; 2.127 ; wdg_cnt[6]     ; wdg_cnt[6]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.348      ;
 ; 2.140 ; wdg_cnt[0]     ; wdg_cnt[1]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.361      ;
-; 2.183 ; clk_cnt[0]     ; clk_cnt[0]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.404      ;
-; 2.186 ; clk_cnt[0]     ; clk_cnt[2]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.407      ;
-; 2.188 ; clk_cnt[0]     ; clk_cnt[1]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.409      ;
-; 2.196 ; clk_cnt[0]     ; clk_cnt[3]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.417      ;
+; 2.159 ; buzzer_cnt[24] ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.380      ;
+; 2.171 ; buzzer_cnt[24] ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.392      ;
+; 2.171 ; buzzer_cnt[24] ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.392      ;
+; 2.206 ; clk_cnt[0]     ; clk_cnt[0]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.427      ;
 ; 2.212 ; wdg_cnt[20]    ; wdg_cnt[20]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.433      ;
+; 2.212 ; clk_cnt[0]     ; clk_cnt[3]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.433      ;
 ; 2.212 ; wdg_cnt[5]     ; wdg_cnt[5]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.433      ;
-; 2.221 ; wdg_cnt[22]    ; wdg_cnt[22]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.442      ;
+; 2.218 ; clk_cnt[0]     ; clk_cnt[1]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.439      ;
+; 2.220 ; clk_cnt[0]     ; clk_cnt[2]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.441      ;
 ; 2.221 ; wdg_cnt[15]    ; wdg_cnt[15]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.442      ;
 ; 2.221 ; wdg_cnt[10]    ; wdg_cnt[10]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.442      ;
-; 2.222 ; wdg_cnt[21]    ; wdg_cnt[21]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.443      ;
 ; 2.230 ; wdg_cnt[12]    ; wdg_cnt[12]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.451      ;
 ; 2.230 ; wdg_cnt[2]     ; wdg_cnt[2]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.451      ;
 ; 2.231 ; wdg_cnt[13]    ; wdg_cnt[13]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.452      ;
 ; 2.231 ; wdg_cnt[11]    ; wdg_cnt[11]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.452      ;
 ; 2.231 ; wdg_cnt[3]     ; wdg_cnt[3]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.452      ;
 ; 2.231 ; wdg_cnt[1]     ; wdg_cnt[1]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.452      ;
-; 2.251 ; audio_amp_en   ; audio_amp_en   ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.472      ;
-; 2.257 ; clk_1mhz_reg   ; clk_1mhz_reg   ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.478      ;
-; 2.324 ; clk_cnt[1]     ; clk_cnt[1]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.545      ;
-; 2.325 ; clk_cnt[1]     ; clk_cnt[2]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.546      ;
-; 2.331 ; clk_cnt[1]     ; clk_cnt[3]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.552      ;
+; 2.232 ; audio_amp_en   ; audio_amp_en   ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.453      ;
+; 2.240 ; wdg_cnt[21]    ; wdg_cnt[21]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.461      ;
+; 2.260 ; wdg_cnt[22]    ; wdg_cnt[22]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.481      ;
+; 2.347 ; clk_cnt[3]     ; clk_cnt[3]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.568      ;
+; 2.349 ; clk_cnt[3]     ; clk_cnt[0]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.570      ;
+; 2.353 ; clk_cnt[3]     ; clk_cnt[1]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.574      ;
+; 2.354 ; clk_cnt[3]     ; clk_1mhz_reg   ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.575      ;
+; 2.356 ; clk_cnt[3]     ; clk_cnt[2]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 2.577      ;
 ; 2.842 ; buzzer_cnt[3]  ; buzzer_cnt[3]  ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.063      ;
-; 2.856 ; buzzer_cnt[4]  ; buzzer_cnt[4]  ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.077      ;
+; 2.853 ; buzzer_cnt[4]  ; buzzer_cnt[4]  ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.074      ;
 ; 2.939 ; wdg_cnt[17]    ; wdg_cnt[18]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.160      ;
 ; 2.940 ; wdg_cnt[4]     ; wdg_cnt[5]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.161      ;
 ; 2.948 ; wdg_cnt[7]     ; wdg_cnt[8]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.169      ;
@@ -332,9 +332,12 @@ No paths to report.
 ; 3.060 ; wdg_cnt[19]    ; wdg_cnt[21]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.281      ;
 ; 3.060 ; wdg_cnt[14]    ; wdg_cnt[16]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.281      ;
 ; 3.060 ; wdg_cnt[18]    ; wdg_cnt[20]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.281      ;
+; 3.066 ; buzzer_en      ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.287      ;
 ; 3.069 ; wdg_cnt[9]     ; wdg_cnt[11]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.290      ;
 ; 3.069 ; wdg_cnt[8]     ; wdg_cnt[10]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.290      ;
-; 3.106 ; buzzer_cnt[5]  ; buzzer_cnt[5]  ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.327      ;
+; 3.078 ; buzzer_en      ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.299      ;
+; 3.108 ; buzzer_cnt[5]  ; buzzer_cnt[5]  ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.329      ;
+; 3.132 ; clk_cnt[1]     ; clk_1mhz_reg   ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.353      ;
 ; 3.152 ; wdg_cnt[5]     ; wdg_cnt[6]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.373      ;
 ; 3.152 ; wdg_cnt[20]    ; wdg_cnt[21]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.373      ;
 ; 3.161 ; wdg_cnt[15]    ; wdg_cnt[16]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.382      ;
@@ -347,16 +350,15 @@ No paths to report.
 ; 3.171 ; wdg_cnt[3]     ; wdg_cnt[4]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.392      ;
 ; 3.171 ; wdg_cnt[18]    ; wdg_cnt[21]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.392      ;
 ; 3.180 ; wdg_cnt[8]     ; wdg_cnt[11]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.401      ;
-; 3.206 ; buzzer_en      ; buzzer_cnt[24] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.427      ;
-; 3.207 ; buzzer_en      ; buzzer_cnt[20] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.428      ;
-; 3.211 ; buzzer_en      ; buzzer_cnt[23] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.432      ;
 ; 3.272 ; wdg_cnt[17]    ; wdg_cnt[21]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.493      ;
 ; 3.281 ; wdg_cnt[12]    ; wdg_cnt[14]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.502      ;
 ; 3.281 ; wdg_cnt[2]     ; wdg_cnt[4]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.502      ;
 ; 3.281 ; wdg_cnt[7]     ; wdg_cnt[11]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.502      ;
 ; 3.282 ; wdg_cnt[3]     ; wdg_cnt[5]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.503      ;
 ; 3.282 ; wdg_cnt[13]    ; wdg_cnt[15]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.503      ;
-; 3.360 ; buzzer_cnt[22] ; buzzer_cnt[22] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.581      ;
+; 3.359 ; buzzer_cnt[21] ; buzzer_cnt[21] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.580      ;
+; 3.367 ; buzzer_en      ; buzzer_cnt[21] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.588      ;
+; 3.368 ; buzzer_en      ; buzzer_cnt[22] ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.589      ;
 ; 3.392 ; wdg_cnt[2]     ; wdg_cnt[5]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.613      ;
 ; 3.392 ; wdg_cnt[12]    ; wdg_cnt[15]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.613      ;
 ; 3.393 ; wdg_cnt[3]     ; wdg_cnt[6]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.614      ;
@@ -366,8 +368,6 @@ No paths to report.
 ; 3.400 ; wdg_cnt[0]     ; wdg_cnt[4]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.621      ;
 ; 3.400 ; wdg_cnt[0]     ; wdg_cnt[3]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.621      ;
 ; 3.400 ; wdg_cnt[0]     ; wdg_cnt[2]     ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.621      ;
-; 3.483 ; wdg_cnt[21]    ; wdg_cnt[22]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.704      ;
-; 3.492 ; wdg_cnt[11]    ; wdg_cnt[16]    ; fpga_clk     ; fpga_clk    ; 0.000        ; 0.000      ; 3.713      ;
 +-------+----------------+----------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -484,23 +484,23 @@ No paths to report.
 +-------------+------------+--------+--------+------------+-----------------+
 ; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-------------+------------+--------+--------+------------+-----------------+
-; gpmc_cs3_n  ; fpga_clk   ; 11.346 ; 11.346 ; Rise       ; fpga_clk        ;
-; gpmc_we_n   ; fpga_clk   ; 5.448  ; 5.448  ; Rise       ; fpga_clk        ;
-; sa[*]       ; fpga_clk   ; 10.713 ; 10.713 ; Rise       ; fpga_clk        ;
-;  sa[0]      ; fpga_clk   ; 7.094  ; 7.094  ; Rise       ; fpga_clk        ;
-;  sa[1]      ; fpga_clk   ; 7.524  ; 7.524  ; Rise       ; fpga_clk        ;
-;  sa[2]      ; fpga_clk   ; 7.372  ; 7.372  ; Rise       ; fpga_clk        ;
-;  sa[3]      ; fpga_clk   ; 9.645  ; 9.645  ; Rise       ; fpga_clk        ;
-;  sa[4]      ; fpga_clk   ; 10.713 ; 10.713 ; Rise       ; fpga_clk        ;
-;  sa[5]      ; fpga_clk   ; 10.354 ; 10.354 ; Rise       ; fpga_clk        ;
-;  sa[6]      ; fpga_clk   ; 10.544 ; 10.544 ; Rise       ; fpga_clk        ;
-;  sa[7]      ; fpga_clk   ; 10.426 ; 10.426 ; Rise       ; fpga_clk        ;
-; sd[*]       ; fpga_clk   ; 5.522  ; 5.522  ; Rise       ; fpga_clk        ;
-;  sd[0]      ; fpga_clk   ; 4.564  ; 4.564  ; Rise       ; fpga_clk        ;
-;  sd[1]      ; fpga_clk   ; 5.522  ; 5.522  ; Rise       ; fpga_clk        ;
-;  sd[2]      ; fpga_clk   ; 3.763  ; 3.763  ; Rise       ; fpga_clk        ;
-;  sd[3]      ; fpga_clk   ; 3.293  ; 3.293  ; Rise       ; fpga_clk        ;
-; sys_reset_n ; fpga_clk   ; 7.164  ; 7.164  ; Rise       ; fpga_clk        ;
+; gpmc_cs3_n  ; fpga_clk   ; 11.645 ; 11.645 ; Rise       ; fpga_clk        ;
+; gpmc_we_n   ; fpga_clk   ; 7.393  ; 7.393  ; Rise       ; fpga_clk        ;
+; sa[*]       ; fpga_clk   ; 12.340 ; 12.340 ; Rise       ; fpga_clk        ;
+;  sa[0]      ; fpga_clk   ; 8.425  ; 8.425  ; Rise       ; fpga_clk        ;
+;  sa[1]      ; fpga_clk   ; 10.880 ; 10.880 ; Rise       ; fpga_clk        ;
+;  sa[2]      ; fpga_clk   ; 11.986 ; 11.986 ; Rise       ; fpga_clk        ;
+;  sa[3]      ; fpga_clk   ; 9.532  ; 9.532  ; Rise       ; fpga_clk        ;
+;  sa[4]      ; fpga_clk   ; 12.321 ; 12.321 ; Rise       ; fpga_clk        ;
+;  sa[5]      ; fpga_clk   ; 11.947 ; 11.947 ; Rise       ; fpga_clk        ;
+;  sa[6]      ; fpga_clk   ; 12.340 ; 12.340 ; Rise       ; fpga_clk        ;
+;  sa[7]      ; fpga_clk   ; 11.308 ; 11.308 ; Rise       ; fpga_clk        ;
+; sd[*]       ; fpga_clk   ; 4.746  ; 4.746  ; Rise       ; fpga_clk        ;
+;  sd[0]      ; fpga_clk   ; 4.746  ; 4.746  ; Rise       ; fpga_clk        ;
+;  sd[1]      ; fpga_clk   ; 3.972  ; 3.972  ; Rise       ; fpga_clk        ;
+;  sd[2]      ; fpga_clk   ; 4.516  ; 4.516  ; Rise       ; fpga_clk        ;
+;  sd[3]      ; fpga_clk   ; 3.982  ; 3.982  ; Rise       ; fpga_clk        ;
+; sys_reset_n ; fpga_clk   ; 5.506  ; 5.506  ; Rise       ; fpga_clk        ;
 +-------------+------------+--------+--------+------------+-----------------+
 
 
@@ -509,23 +509,23 @@ No paths to report.
 +-------------+------------+--------+--------+------------+-----------------+
 ; Data Port   ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +-------------+------------+--------+--------+------------+-----------------+
-; gpmc_cs3_n  ; fpga_clk   ; -6.436 ; -6.436 ; Rise       ; fpga_clk        ;
-; gpmc_we_n   ; fpga_clk   ; -2.567 ; -2.567 ; Rise       ; fpga_clk        ;
-; sa[*]       ; fpga_clk   ; -3.084 ; -3.084 ; Rise       ; fpga_clk        ;
-;  sa[0]      ; fpga_clk   ; -3.107 ; -3.107 ; Rise       ; fpga_clk        ;
-;  sa[1]      ; fpga_clk   ; -4.566 ; -4.566 ; Rise       ; fpga_clk        ;
-;  sa[2]      ; fpga_clk   ; -4.376 ; -4.376 ; Rise       ; fpga_clk        ;
-;  sa[3]      ; fpga_clk   ; -3.084 ; -3.084 ; Rise       ; fpga_clk        ;
-;  sa[4]      ; fpga_clk   ; -5.803 ; -5.803 ; Rise       ; fpga_clk        ;
-;  sa[5]      ; fpga_clk   ; -5.444 ; -5.444 ; Rise       ; fpga_clk        ;
-;  sa[6]      ; fpga_clk   ; -5.634 ; -5.634 ; Rise       ; fpga_clk        ;
-;  sa[7]      ; fpga_clk   ; -5.516 ; -5.516 ; Rise       ; fpga_clk        ;
-; sd[*]       ; fpga_clk   ; -2.331 ; -2.331 ; Rise       ; fpga_clk        ;
-;  sd[0]      ; fpga_clk   ; -2.739 ; -2.739 ; Rise       ; fpga_clk        ;
-;  sd[1]      ; fpga_clk   ; -2.331 ; -2.331 ; Rise       ; fpga_clk        ;
-;  sd[2]      ; fpga_clk   ; -2.773 ; -2.773 ; Rise       ; fpga_clk        ;
-;  sd[3]      ; fpga_clk   ; -2.733 ; -2.733 ; Rise       ; fpga_clk        ;
-; sys_reset_n ; fpga_clk   ; -4.949 ; -4.949 ; Rise       ; fpga_clk        ;
+; gpmc_cs3_n  ; fpga_clk   ; -6.444 ; -6.444 ; Rise       ; fpga_clk        ;
+; gpmc_we_n   ; fpga_clk   ; -3.655 ; -3.655 ; Rise       ; fpga_clk        ;
+; sa[*]       ; fpga_clk   ; -3.565 ; -3.565 ; Rise       ; fpga_clk        ;
+;  sa[0]      ; fpga_clk   ; -3.565 ; -3.565 ; Rise       ; fpga_clk        ;
+;  sa[1]      ; fpga_clk   ; -3.949 ; -3.949 ; Rise       ; fpga_clk        ;
+;  sa[2]      ; fpga_clk   ; -3.826 ; -3.826 ; Rise       ; fpga_clk        ;
+;  sa[3]      ; fpga_clk   ; -4.650 ; -4.650 ; Rise       ; fpga_clk        ;
+;  sa[4]      ; fpga_clk   ; -7.120 ; -7.120 ; Rise       ; fpga_clk        ;
+;  sa[5]      ; fpga_clk   ; -6.746 ; -6.746 ; Rise       ; fpga_clk        ;
+;  sa[6]      ; fpga_clk   ; -7.139 ; -7.139 ; Rise       ; fpga_clk        ;
+;  sa[7]      ; fpga_clk   ; -6.107 ; -6.107 ; Rise       ; fpga_clk        ;
+; sd[*]       ; fpga_clk   ; -2.243 ; -2.243 ; Rise       ; fpga_clk        ;
+;  sd[0]      ; fpga_clk   ; -2.731 ; -2.731 ; Rise       ; fpga_clk        ;
+;  sd[1]      ; fpga_clk   ; -2.498 ; -2.498 ; Rise       ; fpga_clk        ;
+;  sd[2]      ; fpga_clk   ; -2.243 ; -2.243 ; Rise       ; fpga_clk        ;
+;  sd[3]      ; fpga_clk   ; -3.382 ; -3.382 ; Rise       ; fpga_clk        ;
+; sys_reset_n ; fpga_clk   ; -4.030 ; -4.030 ; Rise       ; fpga_clk        ;
 +-------------+------------+--------+--------+------------+-----------------+
 
 
@@ -534,35 +534,35 @@ No paths to report.
 +------------------+------------+--------+--------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------------+------------+--------+--------+------------+-----------------+
-; buzzer_out       ; fpga_clk   ; 9.345  ; 9.345  ; Rise       ; fpga_clk        ;
-; cpld_amp_shdn    ; fpga_clk   ; 9.242  ; 9.242  ; Rise       ; fpga_clk        ;
-; cpld_led_out     ; fpga_clk   ; 9.512  ; 9.512  ; Rise       ; fpga_clk        ;
-; cpu_rxd5         ; fpga_clk   ; 8.462  ; 8.462  ; Rise       ; fpga_clk        ;
-; dio_out[*]       ; fpga_clk   ; 9.745  ; 9.745  ; Rise       ; fpga_clk        ;
-;  dio_out[0]      ; fpga_clk   ; 9.745  ; 9.745  ; Rise       ; fpga_clk        ;
-;  dio_out[1]      ; fpga_clk   ; 9.707  ; 9.707  ; Rise       ; fpga_clk        ;
-; esam_clk         ; fpga_clk   ; 9.253  ; 9.253  ; Rise       ; fpga_clk        ;
-; esam_data        ; fpga_clk   ; 8.993  ; 8.993  ; Rise       ; fpga_clk        ;
-; esam_on          ; fpga_clk   ; 8.698  ; 8.698  ; Rise       ; fpga_clk        ;
-; esam_rst         ; fpga_clk   ; 8.708  ; 8.708  ; Rise       ; fpga_clk        ;
-; io_led_charge    ; fpga_clk   ; 11.180 ; 11.180 ; Rise       ; fpga_clk        ;
-; io_led_discharge ; fpga_clk   ; 11.027 ; 11.027 ; Rise       ; fpga_clk        ;
-; io_led_rev[*]    ; fpga_clk   ; 8.669  ; 8.669  ; Rise       ; fpga_clk        ;
-;  io_led_rev[1]   ; fpga_clk   ; 8.669  ; 8.669  ; Rise       ; fpga_clk        ;
-;  io_led_rev[2]   ; fpga_clk   ; 8.277  ; 8.277  ; Rise       ; fpga_clk        ;
-;  io_led_rev[3]   ; fpga_clk   ; 8.182  ; 8.182  ; Rise       ; fpga_clk        ;
-; io_led_run       ; fpga_clk   ; 8.037  ; 8.037  ; Rise       ; fpga_clk        ;
-; lcd_bl_en        ; fpga_clk   ; 8.687  ; 8.687  ; Rise       ; fpga_clk        ;
-; lcd_pwen         ; fpga_clk   ; 8.668  ; 8.668  ; Rise       ; fpga_clk        ;
-; lvds_pwen        ; fpga_clk   ; 8.659  ; 8.659  ; Rise       ; fpga_clk        ;
-; pcie_wakeup_in   ; fpga_clk   ; 8.655  ; 8.655  ; Rise       ; fpga_clk        ;
-; pwr_4g_en        ; fpga_clk   ; 8.797  ; 8.797  ; Rise       ; fpga_clk        ;
-; sd[*]            ; fpga_clk   ; 15.202 ; 15.202 ; Rise       ; fpga_clk        ;
-;  sd[0]           ; fpga_clk   ; 15.202 ; 15.202 ; Rise       ; fpga_clk        ;
-;  sd[1]           ; fpga_clk   ; 12.676 ; 12.676 ; Rise       ; fpga_clk        ;
-;  sd[2]           ; fpga_clk   ; 13.218 ; 13.218 ; Rise       ; fpga_clk        ;
-;  sd[3]           ; fpga_clk   ; 11.373 ; 11.373 ; Rise       ; fpga_clk        ;
-; wdg_out          ; fpga_clk   ; 11.867 ; 11.867 ; Rise       ; fpga_clk        ;
+; buzzer_out       ; fpga_clk   ; 12.343 ; 12.343 ; Rise       ; fpga_clk        ;
+; cpld_amp_shdn    ; fpga_clk   ; 8.702  ; 8.702  ; Rise       ; fpga_clk        ;
+; cpld_led_out     ; fpga_clk   ; 9.413  ; 9.413  ; Rise       ; fpga_clk        ;
+; cpu_rxd5         ; fpga_clk   ; 9.038  ; 9.038  ; Rise       ; fpga_clk        ;
+; dio_out[*]       ; fpga_clk   ; 9.834  ; 9.834  ; Rise       ; fpga_clk        ;
+;  dio_out[0]      ; fpga_clk   ; 9.834  ; 9.834  ; Rise       ; fpga_clk        ;
+;  dio_out[1]      ; fpga_clk   ; 9.703  ; 9.703  ; Rise       ; fpga_clk        ;
+; esam_clk         ; fpga_clk   ; 9.557  ; 9.557  ; Rise       ; fpga_clk        ;
+; esam_data        ; fpga_clk   ; 10.067 ; 10.067 ; Rise       ; fpga_clk        ;
+; esam_on          ; fpga_clk   ; 9.248  ; 9.248  ; Rise       ; fpga_clk        ;
+; esam_rst         ; fpga_clk   ; 9.266  ; 9.266  ; Rise       ; fpga_clk        ;
+; io_led_charge    ; fpga_clk   ; 8.154  ; 8.154  ; Rise       ; fpga_clk        ;
+; io_led_discharge ; fpga_clk   ; 8.156  ; 8.156  ; Rise       ; fpga_clk        ;
+; io_led_rev[*]    ; fpga_clk   ; 8.831  ; 8.831  ; Rise       ; fpga_clk        ;
+;  io_led_rev[1]   ; fpga_clk   ; 8.219  ; 8.219  ; Rise       ; fpga_clk        ;
+;  io_led_rev[2]   ; fpga_clk   ; 8.209  ; 8.209  ; Rise       ; fpga_clk        ;
+;  io_led_rev[3]   ; fpga_clk   ; 8.831  ; 8.831  ; Rise       ; fpga_clk        ;
+; io_led_run       ; fpga_clk   ; 8.492  ; 8.492  ; Rise       ; fpga_clk        ;
+; lcd_bl_en        ; fpga_clk   ; 9.136  ; 9.136  ; Rise       ; fpga_clk        ;
+; lcd_pwen         ; fpga_clk   ; 9.314  ; 9.314  ; Rise       ; fpga_clk        ;
+; lvds_pwen        ; fpga_clk   ; 9.143  ; 9.143  ; Rise       ; fpga_clk        ;
+; pcie_wakeup_in   ; fpga_clk   ; 8.493  ; 8.493  ; Rise       ; fpga_clk        ;
+; pwr_4g_en        ; fpga_clk   ; 9.213  ; 9.213  ; Rise       ; fpga_clk        ;
+; sd[*]            ; fpga_clk   ; 14.844 ; 14.844 ; Rise       ; fpga_clk        ;
+;  sd[0]           ; fpga_clk   ; 14.844 ; 14.844 ; Rise       ; fpga_clk        ;
+;  sd[1]           ; fpga_clk   ; 14.061 ; 14.061 ; Rise       ; fpga_clk        ;
+;  sd[2]           ; fpga_clk   ; 13.226 ; 13.226 ; Rise       ; fpga_clk        ;
+;  sd[3]           ; fpga_clk   ; 11.643 ; 11.643 ; Rise       ; fpga_clk        ;
+; wdg_out          ; fpga_clk   ; 11.356 ; 11.356 ; Rise       ; fpga_clk        ;
 +------------------+------------+--------+--------+------------+-----------------+
 
 
@@ -571,35 +571,35 @@ No paths to report.
 +------------------+------------+--------+--------+------------+-----------------+
 ; Data Port        ; Clock Port ; Rise   ; Fall   ; Clock Edge ; Clock Reference ;
 +------------------+------------+--------+--------+------------+-----------------+
-; buzzer_out       ; fpga_clk   ; 7.246  ; 7.246  ; Rise       ; fpga_clk        ;
-; cpld_amp_shdn    ; fpga_clk   ; 9.242  ; 9.242  ; Rise       ; fpga_clk        ;
-; cpld_led_out     ; fpga_clk   ; 9.512  ; 9.512  ; Rise       ; fpga_clk        ;
-; cpu_rxd5         ; fpga_clk   ; 8.462  ; 8.462  ; Rise       ; fpga_clk        ;
-; dio_out[*]       ; fpga_clk   ; 9.140  ; 9.140  ; Rise       ; fpga_clk        ;
-;  dio_out[0]      ; fpga_clk   ; 9.175  ; 9.175  ; Rise       ; fpga_clk        ;
-;  dio_out[1]      ; fpga_clk   ; 9.140  ; 9.140  ; Rise       ; fpga_clk        ;
-; esam_clk         ; fpga_clk   ; 9.253  ; 9.253  ; Rise       ; fpga_clk        ;
-; esam_data        ; fpga_clk   ; 8.993  ; 8.993  ; Rise       ; fpga_clk        ;
-; esam_on          ; fpga_clk   ; 8.698  ; 8.698  ; Rise       ; fpga_clk        ;
-; esam_rst         ; fpga_clk   ; 8.708  ; 8.708  ; Rise       ; fpga_clk        ;
-; io_led_charge    ; fpga_clk   ; 11.180 ; 11.180 ; Rise       ; fpga_clk        ;
-; io_led_discharge ; fpga_clk   ; 11.027 ; 11.027 ; Rise       ; fpga_clk        ;
-; io_led_rev[*]    ; fpga_clk   ; 8.182  ; 8.182  ; Rise       ; fpga_clk        ;
-;  io_led_rev[1]   ; fpga_clk   ; 8.669  ; 8.669  ; Rise       ; fpga_clk        ;
-;  io_led_rev[2]   ; fpga_clk   ; 8.277  ; 8.277  ; Rise       ; fpga_clk        ;
-;  io_led_rev[3]   ; fpga_clk   ; 8.182  ; 8.182  ; Rise       ; fpga_clk        ;
-; io_led_run       ; fpga_clk   ; 8.037  ; 8.037  ; Rise       ; fpga_clk        ;
-; lcd_bl_en        ; fpga_clk   ; 8.687  ; 8.687  ; Rise       ; fpga_clk        ;
-; lcd_pwen         ; fpga_clk   ; 8.668  ; 8.668  ; Rise       ; fpga_clk        ;
-; lvds_pwen        ; fpga_clk   ; 8.659  ; 8.659  ; Rise       ; fpga_clk        ;
-; pcie_wakeup_in   ; fpga_clk   ; 8.655  ; 8.655  ; Rise       ; fpga_clk        ;
-; pwr_4g_en        ; fpga_clk   ; 8.797  ; 8.797  ; Rise       ; fpga_clk        ;
-; sd[*]            ; fpga_clk   ; 9.236  ; 9.236  ; Rise       ; fpga_clk        ;
-;  sd[0]           ; fpga_clk   ; 11.094 ; 11.094 ; Rise       ; fpga_clk        ;
-;  sd[1]           ; fpga_clk   ; 10.410 ; 10.410 ; Rise       ; fpga_clk        ;
-;  sd[2]           ; fpga_clk   ; 10.755 ; 10.755 ; Rise       ; fpga_clk        ;
-;  sd[3]           ; fpga_clk   ; 9.236  ; 9.236  ; Rise       ; fpga_clk        ;
-; wdg_out          ; fpga_clk   ; 9.599  ; 9.599  ; Rise       ; fpga_clk        ;
+; buzzer_out       ; fpga_clk   ; 9.714  ; 9.714  ; Rise       ; fpga_clk        ;
+; cpld_amp_shdn    ; fpga_clk   ; 8.702  ; 8.702  ; Rise       ; fpga_clk        ;
+; cpld_led_out     ; fpga_clk   ; 9.413  ; 9.413  ; Rise       ; fpga_clk        ;
+; cpu_rxd5         ; fpga_clk   ; 9.038  ; 9.038  ; Rise       ; fpga_clk        ;
+; dio_out[*]       ; fpga_clk   ; 9.120  ; 9.120  ; Rise       ; fpga_clk        ;
+;  dio_out[0]      ; fpga_clk   ; 9.260  ; 9.260  ; Rise       ; fpga_clk        ;
+;  dio_out[1]      ; fpga_clk   ; 9.120  ; 9.120  ; Rise       ; fpga_clk        ;
+; esam_clk         ; fpga_clk   ; 9.557  ; 9.557  ; Rise       ; fpga_clk        ;
+; esam_data        ; fpga_clk   ; 10.067 ; 10.067 ; Rise       ; fpga_clk        ;
+; esam_on          ; fpga_clk   ; 9.248  ; 9.248  ; Rise       ; fpga_clk        ;
+; esam_rst         ; fpga_clk   ; 9.266  ; 9.266  ; Rise       ; fpga_clk        ;
+; io_led_charge    ; fpga_clk   ; 8.154  ; 8.154  ; Rise       ; fpga_clk        ;
+; io_led_discharge ; fpga_clk   ; 8.156  ; 8.156  ; Rise       ; fpga_clk        ;
+; io_led_rev[*]    ; fpga_clk   ; 8.209  ; 8.209  ; Rise       ; fpga_clk        ;
+;  io_led_rev[1]   ; fpga_clk   ; 8.219  ; 8.219  ; Rise       ; fpga_clk        ;
+;  io_led_rev[2]   ; fpga_clk   ; 8.209  ; 8.209  ; Rise       ; fpga_clk        ;
+;  io_led_rev[3]   ; fpga_clk   ; 8.831  ; 8.831  ; Rise       ; fpga_clk        ;
+; io_led_run       ; fpga_clk   ; 8.492  ; 8.492  ; Rise       ; fpga_clk        ;
+; lcd_bl_en        ; fpga_clk   ; 9.136  ; 9.136  ; Rise       ; fpga_clk        ;
+; lcd_pwen         ; fpga_clk   ; 9.314  ; 9.314  ; Rise       ; fpga_clk        ;
+; lvds_pwen        ; fpga_clk   ; 9.143  ; 9.143  ; Rise       ; fpga_clk        ;
+; pcie_wakeup_in   ; fpga_clk   ; 8.493  ; 8.493  ; Rise       ; fpga_clk        ;
+; pwr_4g_en        ; fpga_clk   ; 9.213  ; 9.213  ; Rise       ; fpga_clk        ;
+; sd[*]            ; fpga_clk   ; 9.145  ; 9.145  ; Rise       ; fpga_clk        ;
+;  sd[0]           ; fpga_clk   ; 11.061 ; 11.061 ; Rise       ; fpga_clk        ;
+;  sd[1]           ; fpga_clk   ; 10.028 ; 10.028 ; Rise       ; fpga_clk        ;
+;  sd[2]           ; fpga_clk   ; 10.075 ; 10.075 ; Rise       ; fpga_clk        ;
+;  sd[3]           ; fpga_clk   ; 9.145  ; 9.145  ; Rise       ; fpga_clk        ;
+; wdg_out          ; fpga_clk   ; 9.090  ; 9.090  ; Rise       ; fpga_clk        ;
 +------------------+------------+--------+--------+------------+-----------------+
 
 
@@ -608,96 +608,96 @@ No paths to report.
 +--------------------+------------------+--------+----+----+--------+
 ; Input Port         ; Output Port      ; RR     ; RF ; FR ; FF     ;
 +--------------------+------------------+--------+----+----+--------+
-; clk_esam_35712mhz  ; esam_clk         ; 12.028 ;    ;    ; 12.028 ;
-; cpu_txd5           ; cpu_rxd5         ; 10.198 ;    ;    ; 10.198 ;
-; cpu_txd5           ; esam_data        ; 9.868  ;    ;    ; 9.868  ;
-; esam_data          ; cpu_rxd5         ; 9.434  ;    ;    ; 9.434  ;
-; gpmc_cs3_n         ; sd[0]            ; 19.832 ;    ;    ; 19.832 ;
-; gpmc_cs3_n         ; sd[1]            ; 20.164 ;    ;    ; 20.164 ;
-; gpmc_cs3_n         ; sd[2]            ; 19.431 ;    ;    ; 19.431 ;
-; gpmc_cs3_n         ; sd[3]            ; 18.222 ;    ;    ; 18.222 ;
-; gpmc_cs3_n         ; sd[4]            ; 11.983 ;    ;    ; 11.983 ;
-; gpmc_cs3_n         ; sd[5]            ; 11.983 ;    ;    ; 11.983 ;
-; gpmc_cs3_n         ; sd[6]            ; 11.983 ;    ;    ; 11.983 ;
-; gpmc_cs3_n         ; sd[7]            ; 11.983 ;    ;    ; 11.983 ;
-; gpmc_oe_n          ; sd[0]            ; 9.657  ;    ;    ; 9.657  ;
-; gpmc_oe_n          ; sd[1]            ; 9.657  ;    ;    ; 9.657  ;
-; gpmc_oe_n          ; sd[2]            ; 9.657  ;    ;    ; 9.657  ;
-; gpmc_oe_n          ; sd[3]            ; 9.657  ;    ;    ; 9.657  ;
-; gpmc_oe_n          ; sd[4]            ; 10.776 ;    ;    ; 10.776 ;
-; gpmc_oe_n          ; sd[5]            ; 10.776 ;    ;    ; 10.776 ;
-; gpmc_oe_n          ; sd[6]            ; 10.776 ;    ;    ; 10.776 ;
-; gpmc_oe_n          ; sd[7]            ; 10.776 ;    ;    ; 10.776 ;
-; pwr_12v_fail       ; io_led_charge    ; 10.337 ;    ;    ; 10.337 ;
-; pwr_12v_fail       ; io_led_discharge ; 10.184 ;    ;    ; 10.184 ;
-; pwr_12v_fail       ; io_led_pwr       ; 7.731  ;    ;    ; 7.731  ;
-; pwr_12v_fail       ; irq_cpld[1]      ; 8.573  ;    ;    ; 8.573  ;
-; pwr_charge_over    ; io_led_charge    ; 9.436  ;    ;    ; 9.436  ;
-; pwr_charge_over    ; io_led_discharge ; 9.292  ;    ;    ; 9.292  ;
-; pwr_discharge_over ; io_led_charge    ; 10.815 ;    ;    ; 10.815 ;
-; pwr_discharge_over ; io_led_discharge ; 10.676 ;    ;    ; 10.676 ;
-; sa[0]              ; sd[0]            ; 16.901 ;    ;    ; 16.901 ;
-; sa[0]              ; sd[1]            ; 16.156 ;    ;    ; 16.156 ;
-; sa[0]              ; sd[2]            ; 14.957 ;    ;    ; 14.957 ;
-; sa[0]              ; sd[3]            ; 15.767 ;    ;    ; 15.767 ;
-; sa[1]              ; sd[0]            ; 16.203 ;    ;    ; 16.203 ;
-; sa[1]              ; sd[1]            ; 16.186 ;    ;    ; 16.186 ;
-; sa[1]              ; sd[2]            ; 15.610 ;    ;    ; 15.610 ;
-; sa[1]              ; sd[3]            ; 15.069 ;    ;    ; 15.069 ;
-; sa[1]              ; sd[4]            ; 11.613 ;    ;    ; 11.613 ;
-; sa[1]              ; sd[5]            ; 11.613 ;    ;    ; 11.613 ;
-; sa[1]              ; sd[6]            ; 11.613 ;    ;    ; 11.613 ;
-; sa[1]              ; sd[7]            ; 11.613 ;    ;    ; 11.613 ;
-; sa[2]              ; sd[0]            ; 16.184 ;    ;    ; 16.184 ;
-; sa[2]              ; sd[1]            ; 15.979 ;    ;    ; 15.979 ;
-; sa[2]              ; sd[2]            ; 15.266 ;    ;    ; 15.266 ;
-; sa[2]              ; sd[3]            ; 15.050 ;    ;    ; 15.050 ;
-; sa[2]              ; sd[4]            ; 11.252 ;    ;    ; 11.252 ;
-; sa[2]              ; sd[5]            ; 11.252 ;    ;    ; 11.252 ;
-; sa[2]              ; sd[6]            ; 11.252 ;    ;    ; 11.252 ;
-; sa[2]              ; sd[7]            ; 11.252 ;    ;    ; 11.252 ;
-; sa[3]              ; sd[0]            ; 18.131 ;    ;    ; 18.131 ;
-; sa[3]              ; sd[1]            ; 18.463 ;    ;    ; 18.463 ;
-; sa[3]              ; sd[2]            ; 17.730 ;    ;    ; 17.730 ;
-; sa[3]              ; sd[3]            ; 16.521 ;    ;    ; 16.521 ;
-; sa[3]              ; sd[4]            ; 9.777  ;    ;    ; 9.777  ;
-; sa[3]              ; sd[5]            ; 9.777  ;    ;    ; 9.777  ;
-; sa[3]              ; sd[6]            ; 9.777  ;    ;    ; 9.777  ;
-; sa[3]              ; sd[7]            ; 9.777  ;    ;    ; 9.777  ;
-; sa[4]              ; sd[0]            ; 19.199 ;    ;    ; 19.199 ;
-; sa[4]              ; sd[1]            ; 19.531 ;    ;    ; 19.531 ;
-; sa[4]              ; sd[2]            ; 18.798 ;    ;    ; 18.798 ;
-; sa[4]              ; sd[3]            ; 17.589 ;    ;    ; 17.589 ;
-; sa[4]              ; sd[4]            ; 11.350 ;    ;    ; 11.350 ;
-; sa[4]              ; sd[5]            ; 11.350 ;    ;    ; 11.350 ;
-; sa[4]              ; sd[6]            ; 11.350 ;    ;    ; 11.350 ;
-; sa[4]              ; sd[7]            ; 11.350 ;    ;    ; 11.350 ;
-; sa[5]              ; sd[0]            ; 18.840 ;    ;    ; 18.840 ;
-; sa[5]              ; sd[1]            ; 19.172 ;    ;    ; 19.172 ;
-; sa[5]              ; sd[2]            ; 18.439 ;    ;    ; 18.439 ;
-; sa[5]              ; sd[3]            ; 17.230 ;    ;    ; 17.230 ;
-; sa[5]              ; sd[4]            ; 10.991 ;    ;    ; 10.991 ;
-; sa[5]              ; sd[5]            ; 10.991 ;    ;    ; 10.991 ;
-; sa[5]              ; sd[6]            ; 10.991 ;    ;    ; 10.991 ;
-; sa[5]              ; sd[7]            ; 10.991 ;    ;    ; 10.991 ;
-; sa[6]              ; sd[0]            ; 19.030 ;    ;    ; 19.030 ;
-; sa[6]              ; sd[1]            ; 19.362 ;    ;    ; 19.362 ;
-; sa[6]              ; sd[2]            ; 18.629 ;    ;    ; 18.629 ;
-; sa[6]              ; sd[3]            ; 17.420 ;    ;    ; 17.420 ;
-; sa[6]              ; sd[4]            ; 11.181 ;    ;    ; 11.181 ;
-; sa[6]              ; sd[5]            ; 11.181 ;    ;    ; 11.181 ;
-; sa[6]              ; sd[6]            ; 11.181 ;    ;    ; 11.181 ;
-; sa[6]              ; sd[7]            ; 11.181 ;    ;    ; 11.181 ;
-; sa[7]              ; sd[0]            ; 18.912 ;    ;    ; 18.912 ;
-; sa[7]              ; sd[1]            ; 19.244 ;    ;    ; 19.244 ;
-; sa[7]              ; sd[2]            ; 18.511 ;    ;    ; 18.511 ;
-; sa[7]              ; sd[3]            ; 17.302 ;    ;    ; 17.302 ;
-; sa[7]              ; sd[4]            ; 11.063 ;    ;    ; 11.063 ;
-; sa[7]              ; sd[5]            ; 11.063 ;    ;    ; 11.063 ;
-; sa[7]              ; sd[6]            ; 11.063 ;    ;    ; 11.063 ;
-; sa[7]              ; sd[7]            ; 11.063 ;    ;    ; 11.063 ;
-; sys_reset_n        ; pcie_rst_n       ; 8.371  ;    ;    ; 8.371  ;
-; sys_reset_n        ; rst_out_n        ; 8.364  ;    ;    ; 8.364  ;
+; clk_esam_35712mhz  ; esam_clk         ; 11.797 ;    ;    ; 11.797 ;
+; cpu_txd5           ; cpu_rxd5         ; 11.272 ;    ;    ; 11.272 ;
+; cpu_txd5           ; esam_data        ; 10.705 ;    ;    ; 10.705 ;
+; esam_data          ; cpu_rxd5         ; 11.420 ;    ;    ; 11.420 ;
+; gpmc_cs3_n         ; sd[0]            ; 20.741 ;    ;    ; 20.741 ;
+; gpmc_cs3_n         ; sd[1]            ; 18.314 ;    ;    ; 18.314 ;
+; gpmc_cs3_n         ; sd[2]            ; 19.639 ;    ;    ; 19.639 ;
+; gpmc_cs3_n         ; sd[3]            ; 18.625 ;    ;    ; 18.625 ;
+; gpmc_cs3_n         ; sd[4]            ; 13.793 ;    ;    ; 13.793 ;
+; gpmc_cs3_n         ; sd[5]            ; 13.793 ;    ;    ; 13.793 ;
+; gpmc_cs3_n         ; sd[6]            ; 13.793 ;    ;    ; 13.793 ;
+; gpmc_cs3_n         ; sd[7]            ; 13.793 ;    ;    ; 13.793 ;
+; gpmc_oe_n          ; sd[0]            ; 9.597  ;    ;    ; 9.597  ;
+; gpmc_oe_n          ; sd[1]            ; 9.597  ;    ;    ; 9.597  ;
+; gpmc_oe_n          ; sd[2]            ; 9.597  ;    ;    ; 9.597  ;
+; gpmc_oe_n          ; sd[3]            ; 9.597  ;    ;    ; 9.597  ;
+; gpmc_oe_n          ; sd[4]            ; 10.721 ;    ;    ; 10.721 ;
+; gpmc_oe_n          ; sd[5]            ; 10.721 ;    ;    ; 10.721 ;
+; gpmc_oe_n          ; sd[6]            ; 10.721 ;    ;    ; 10.721 ;
+; gpmc_oe_n          ; sd[7]            ; 10.721 ;    ;    ; 10.721 ;
+; pwr_12v_fail       ; io_led_charge    ; 9.499  ;    ;    ; 9.499  ;
+; pwr_12v_fail       ; io_led_discharge ; 9.499  ;    ;    ; 9.499  ;
+; pwr_12v_fail       ; io_led_pwr       ; 7.691  ;    ;    ; 7.691  ;
+; pwr_12v_fail       ; irq_cpld[1]      ; 8.538  ;    ;    ; 8.538  ;
+; pwr_charge_over    ; io_led_charge    ; 8.234  ;    ;    ; 8.234  ;
+; pwr_charge_over    ; io_led_discharge ; 8.233  ;    ;    ; 8.233  ;
+; pwr_discharge_over ; io_led_charge    ; 9.388  ;    ;    ; 9.388  ;
+; pwr_discharge_over ; io_led_discharge ; 9.387  ;    ;    ; 9.387  ;
+; sa[0]              ; sd[0]            ; 18.350 ;    ;    ; 18.350 ;
+; sa[0]              ; sd[1]            ; 16.736 ;    ;    ; 16.736 ;
+; sa[0]              ; sd[2]            ; 17.391 ;    ;    ; 17.391 ;
+; sa[0]              ; sd[3]            ; 16.447 ;    ;    ; 16.447 ;
+; sa[1]              ; sd[0]            ; 19.976 ;    ;    ; 19.976 ;
+; sa[1]              ; sd[1]            ; 17.027 ;    ;    ; 17.027 ;
+; sa[1]              ; sd[2]            ; 18.874 ;    ;    ; 18.874 ;
+; sa[1]              ; sd[3]            ; 17.860 ;    ;    ; 17.860 ;
+; sa[1]              ; sd[4]            ; 13.031 ;    ;    ; 13.031 ;
+; sa[1]              ; sd[5]            ; 13.031 ;    ;    ; 13.031 ;
+; sa[1]              ; sd[6]            ; 13.031 ;    ;    ; 13.031 ;
+; sa[1]              ; sd[7]            ; 13.031 ;    ;    ; 13.031 ;
+; sa[2]              ; sd[0]            ; 21.082 ;    ;    ; 21.082 ;
+; sa[2]              ; sd[1]            ; 18.133 ;    ;    ; 18.133 ;
+; sa[2]              ; sd[2]            ; 19.980 ;    ;    ; 19.980 ;
+; sa[2]              ; sd[3]            ; 18.966 ;    ;    ; 18.966 ;
+; sa[2]              ; sd[4]            ; 14.137 ;    ;    ; 14.137 ;
+; sa[2]              ; sd[5]            ; 14.137 ;    ;    ; 14.137 ;
+; sa[2]              ; sd[6]            ; 14.137 ;    ;    ; 14.137 ;
+; sa[2]              ; sd[7]            ; 14.137 ;    ;    ; 14.137 ;
+; sa[3]              ; sd[0]            ; 19.359 ;    ;    ; 19.359 ;
+; sa[3]              ; sd[1]            ; 18.111 ;    ;    ; 18.111 ;
+; sa[3]              ; sd[2]            ; 18.389 ;    ;    ; 18.389 ;
+; sa[3]              ; sd[3]            ; 17.427 ;    ;    ; 17.427 ;
+; sa[3]              ; sd[4]            ; 11.679 ;    ;    ; 11.679 ;
+; sa[3]              ; sd[5]            ; 11.679 ;    ;    ; 11.679 ;
+; sa[3]              ; sd[6]            ; 11.679 ;    ;    ; 11.679 ;
+; sa[3]              ; sd[7]            ; 11.679 ;    ;    ; 11.679 ;
+; sa[4]              ; sd[0]            ; 21.417 ;    ;    ; 21.417 ;
+; sa[4]              ; sd[1]            ; 18.990 ;    ;    ; 18.990 ;
+; sa[4]              ; sd[2]            ; 20.315 ;    ;    ; 20.315 ;
+; sa[4]              ; sd[3]            ; 19.301 ;    ;    ; 19.301 ;
+; sa[4]              ; sd[4]            ; 14.469 ;    ;    ; 14.469 ;
+; sa[4]              ; sd[5]            ; 14.469 ;    ;    ; 14.469 ;
+; sa[4]              ; sd[6]            ; 14.469 ;    ;    ; 14.469 ;
+; sa[4]              ; sd[7]            ; 14.469 ;    ;    ; 14.469 ;
+; sa[5]              ; sd[0]            ; 21.043 ;    ;    ; 21.043 ;
+; sa[5]              ; sd[1]            ; 18.616 ;    ;    ; 18.616 ;
+; sa[5]              ; sd[2]            ; 19.941 ;    ;    ; 19.941 ;
+; sa[5]              ; sd[3]            ; 18.927 ;    ;    ; 18.927 ;
+; sa[5]              ; sd[4]            ; 14.095 ;    ;    ; 14.095 ;
+; sa[5]              ; sd[5]            ; 14.095 ;    ;    ; 14.095 ;
+; sa[5]              ; sd[6]            ; 14.095 ;    ;    ; 14.095 ;
+; sa[5]              ; sd[7]            ; 14.095 ;    ;    ; 14.095 ;
+; sa[6]              ; sd[0]            ; 21.436 ;    ;    ; 21.436 ;
+; sa[6]              ; sd[1]            ; 19.009 ;    ;    ; 19.009 ;
+; sa[6]              ; sd[2]            ; 20.334 ;    ;    ; 20.334 ;
+; sa[6]              ; sd[3]            ; 19.320 ;    ;    ; 19.320 ;
+; sa[6]              ; sd[4]            ; 14.488 ;    ;    ; 14.488 ;
+; sa[6]              ; sd[5]            ; 14.488 ;    ;    ; 14.488 ;
+; sa[6]              ; sd[6]            ; 14.488 ;    ;    ; 14.488 ;
+; sa[6]              ; sd[7]            ; 14.488 ;    ;    ; 14.488 ;
+; sa[7]              ; sd[0]            ; 20.404 ;    ;    ; 20.404 ;
+; sa[7]              ; sd[1]            ; 17.977 ;    ;    ; 17.977 ;
+; sa[7]              ; sd[2]            ; 19.302 ;    ;    ; 19.302 ;
+; sa[7]              ; sd[3]            ; 18.288 ;    ;    ; 18.288 ;
+; sa[7]              ; sd[4]            ; 13.456 ;    ;    ; 13.456 ;
+; sa[7]              ; sd[5]            ; 13.456 ;    ;    ; 13.456 ;
+; sa[7]              ; sd[6]            ; 13.456 ;    ;    ; 13.456 ;
+; sa[7]              ; sd[7]            ; 13.456 ;    ;    ; 13.456 ;
+; sys_reset_n        ; pcie_rst_n       ; 8.364  ;    ;    ; 8.364  ;
+; sys_reset_n        ; rst_out_n        ; 8.366  ;    ;    ; 8.366  ;
 +--------------------+------------------+--------+----+----+--------+
 
 
@@ -706,96 +706,96 @@ No paths to report.
 +--------------------+------------------+--------+----+----+--------+
 ; Input Port         ; Output Port      ; RR     ; RF ; FR ; FF     ;
 +--------------------+------------------+--------+----+----+--------+
-; clk_esam_35712mhz  ; esam_clk         ; 12.028 ;    ;    ; 12.028 ;
-; cpu_txd5           ; cpu_rxd5         ; 10.198 ;    ;    ; 10.198 ;
-; cpu_txd5           ; esam_data        ; 8.724  ;    ;    ; 8.724  ;
-; esam_data          ; cpu_rxd5         ; 9.434  ;    ;    ; 9.434  ;
-; gpmc_cs3_n         ; sd[0]            ; 10.864 ;    ;    ; 10.864 ;
-; gpmc_cs3_n         ; sd[1]            ; 10.864 ;    ;    ; 10.864 ;
-; gpmc_cs3_n         ; sd[2]            ; 10.864 ;    ;    ; 10.864 ;
-; gpmc_cs3_n         ; sd[3]            ; 10.864 ;    ;    ; 10.864 ;
-; gpmc_cs3_n         ; sd[4]            ; 11.983 ;    ;    ; 11.983 ;
-; gpmc_cs3_n         ; sd[5]            ; 11.983 ;    ;    ; 11.983 ;
-; gpmc_cs3_n         ; sd[6]            ; 11.983 ;    ;    ; 11.983 ;
-; gpmc_cs3_n         ; sd[7]            ; 11.983 ;    ;    ; 11.983 ;
-; gpmc_oe_n          ; sd[0]            ; 9.657  ;    ;    ; 9.657  ;
-; gpmc_oe_n          ; sd[1]            ; 9.657  ;    ;    ; 9.657  ;
-; gpmc_oe_n          ; sd[2]            ; 9.657  ;    ;    ; 9.657  ;
-; gpmc_oe_n          ; sd[3]            ; 9.657  ;    ;    ; 9.657  ;
-; gpmc_oe_n          ; sd[4]            ; 10.776 ;    ;    ; 10.776 ;
-; gpmc_oe_n          ; sd[5]            ; 10.776 ;    ;    ; 10.776 ;
-; gpmc_oe_n          ; sd[6]            ; 10.776 ;    ;    ; 10.776 ;
-; gpmc_oe_n          ; sd[7]            ; 10.776 ;    ;    ; 10.776 ;
-; pwr_12v_fail       ; io_led_charge    ; 10.337 ;    ;    ; 10.337 ;
-; pwr_12v_fail       ; io_led_discharge ; 10.184 ;    ;    ; 10.184 ;
-; pwr_12v_fail       ; io_led_pwr       ; 7.731  ;    ;    ; 7.731  ;
-; pwr_12v_fail       ; irq_cpld[1]      ; 8.573  ;    ;    ; 8.573  ;
-; pwr_charge_over    ; io_led_charge    ; 9.436  ;    ;    ; 9.436  ;
-; pwr_charge_over    ; io_led_discharge ; 9.292  ;    ;    ; 9.292  ;
-; pwr_discharge_over ; io_led_charge    ; 10.815 ;    ;    ; 10.815 ;
-; pwr_discharge_over ; io_led_discharge ; 10.676 ;    ;    ; 10.676 ;
-; sa[0]              ; sd[0]            ; 13.366 ;    ;    ; 13.366 ;
-; sa[0]              ; sd[1]            ; 13.754 ;    ;    ; 13.754 ;
-; sa[0]              ; sd[2]            ; 14.112 ;    ;    ; 14.112 ;
-; sa[0]              ; sd[3]            ; 13.134 ;    ;    ; 13.134 ;
-; sa[1]              ; sd[0]            ; 10.494 ;    ;    ; 10.494 ;
-; sa[1]              ; sd[1]            ; 10.494 ;    ;    ; 10.494 ;
-; sa[1]              ; sd[2]            ; 10.494 ;    ;    ; 10.494 ;
-; sa[1]              ; sd[3]            ; 10.494 ;    ;    ; 10.494 ;
-; sa[1]              ; sd[4]            ; 11.613 ;    ;    ; 11.613 ;
-; sa[1]              ; sd[5]            ; 11.613 ;    ;    ; 11.613 ;
-; sa[1]              ; sd[6]            ; 11.613 ;    ;    ; 11.613 ;
-; sa[1]              ; sd[7]            ; 11.613 ;    ;    ; 11.613 ;
-; sa[2]              ; sd[0]            ; 10.133 ;    ;    ; 10.133 ;
-; sa[2]              ; sd[1]            ; 10.133 ;    ;    ; 10.133 ;
-; sa[2]              ; sd[2]            ; 10.133 ;    ;    ; 10.133 ;
-; sa[2]              ; sd[3]            ; 10.133 ;    ;    ; 10.133 ;
-; sa[2]              ; sd[4]            ; 11.252 ;    ;    ; 11.252 ;
-; sa[2]              ; sd[5]            ; 11.252 ;    ;    ; 11.252 ;
-; sa[2]              ; sd[6]            ; 11.252 ;    ;    ; 11.252 ;
-; sa[2]              ; sd[7]            ; 11.252 ;    ;    ; 11.252 ;
-; sa[3]              ; sd[0]            ; 8.658  ;    ;    ; 8.658  ;
-; sa[3]              ; sd[1]            ; 8.658  ;    ;    ; 8.658  ;
-; sa[3]              ; sd[2]            ; 8.658  ;    ;    ; 8.658  ;
-; sa[3]              ; sd[3]            ; 8.658  ;    ;    ; 8.658  ;
-; sa[3]              ; sd[4]            ; 9.777  ;    ;    ; 9.777  ;
-; sa[3]              ; sd[5]            ; 9.777  ;    ;    ; 9.777  ;
-; sa[3]              ; sd[6]            ; 9.777  ;    ;    ; 9.777  ;
-; sa[3]              ; sd[7]            ; 9.777  ;    ;    ; 9.777  ;
-; sa[4]              ; sd[0]            ; 10.231 ;    ;    ; 10.231 ;
-; sa[4]              ; sd[1]            ; 10.231 ;    ;    ; 10.231 ;
-; sa[4]              ; sd[2]            ; 10.231 ;    ;    ; 10.231 ;
-; sa[4]              ; sd[3]            ; 10.231 ;    ;    ; 10.231 ;
-; sa[4]              ; sd[4]            ; 11.350 ;    ;    ; 11.350 ;
-; sa[4]              ; sd[5]            ; 11.350 ;    ;    ; 11.350 ;
-; sa[4]              ; sd[6]            ; 11.350 ;    ;    ; 11.350 ;
-; sa[4]              ; sd[7]            ; 11.350 ;    ;    ; 11.350 ;
-; sa[5]              ; sd[0]            ; 9.872  ;    ;    ; 9.872  ;
-; sa[5]              ; sd[1]            ; 9.872  ;    ;    ; 9.872  ;
-; sa[5]              ; sd[2]            ; 9.872  ;    ;    ; 9.872  ;
-; sa[5]              ; sd[3]            ; 9.872  ;    ;    ; 9.872  ;
-; sa[5]              ; sd[4]            ; 10.991 ;    ;    ; 10.991 ;
-; sa[5]              ; sd[5]            ; 10.991 ;    ;    ; 10.991 ;
-; sa[5]              ; sd[6]            ; 10.991 ;    ;    ; 10.991 ;
-; sa[5]              ; sd[7]            ; 10.991 ;    ;    ; 10.991 ;
-; sa[6]              ; sd[0]            ; 10.062 ;    ;    ; 10.062 ;
-; sa[6]              ; sd[1]            ; 10.062 ;    ;    ; 10.062 ;
-; sa[6]              ; sd[2]            ; 10.062 ;    ;    ; 10.062 ;
-; sa[6]              ; sd[3]            ; 10.062 ;    ;    ; 10.062 ;
-; sa[6]              ; sd[4]            ; 11.181 ;    ;    ; 11.181 ;
-; sa[6]              ; sd[5]            ; 11.181 ;    ;    ; 11.181 ;
-; sa[6]              ; sd[6]            ; 11.181 ;    ;    ; 11.181 ;
-; sa[6]              ; sd[7]            ; 11.181 ;    ;    ; 11.181 ;
-; sa[7]              ; sd[0]            ; 9.944  ;    ;    ; 9.944  ;
-; sa[7]              ; sd[1]            ; 9.944  ;    ;    ; 9.944  ;
-; sa[7]              ; sd[2]            ; 9.944  ;    ;    ; 9.944  ;
-; sa[7]              ; sd[3]            ; 9.944  ;    ;    ; 9.944  ;
-; sa[7]              ; sd[4]            ; 11.063 ;    ;    ; 11.063 ;
-; sa[7]              ; sd[5]            ; 11.063 ;    ;    ; 11.063 ;
-; sa[7]              ; sd[6]            ; 11.063 ;    ;    ; 11.063 ;
-; sa[7]              ; sd[7]            ; 11.063 ;    ;    ; 11.063 ;
-; sys_reset_n        ; pcie_rst_n       ; 8.371  ;    ;    ; 8.371  ;
-; sys_reset_n        ; rst_out_n        ; 8.364  ;    ;    ; 8.364  ;
+; clk_esam_35712mhz  ; esam_clk         ; 11.797 ;    ;    ; 11.797 ;
+; cpu_txd5           ; cpu_rxd5         ; 11.272 ;    ;    ; 11.272 ;
+; cpu_txd5           ; esam_data        ; 9.563  ;    ;    ; 9.563  ;
+; esam_data          ; cpu_rxd5         ; 11.420 ;    ;    ; 11.420 ;
+; gpmc_cs3_n         ; sd[0]            ; 12.669 ;    ;    ; 12.669 ;
+; gpmc_cs3_n         ; sd[1]            ; 12.669 ;    ;    ; 12.669 ;
+; gpmc_cs3_n         ; sd[2]            ; 12.669 ;    ;    ; 12.669 ;
+; gpmc_cs3_n         ; sd[3]            ; 12.669 ;    ;    ; 12.669 ;
+; gpmc_cs3_n         ; sd[4]            ; 13.793 ;    ;    ; 13.793 ;
+; gpmc_cs3_n         ; sd[5]            ; 13.793 ;    ;    ; 13.793 ;
+; gpmc_cs3_n         ; sd[6]            ; 13.793 ;    ;    ; 13.793 ;
+; gpmc_cs3_n         ; sd[7]            ; 13.793 ;    ;    ; 13.793 ;
+; gpmc_oe_n          ; sd[0]            ; 9.597  ;    ;    ; 9.597  ;
+; gpmc_oe_n          ; sd[1]            ; 9.597  ;    ;    ; 9.597  ;
+; gpmc_oe_n          ; sd[2]            ; 9.597  ;    ;    ; 9.597  ;
+; gpmc_oe_n          ; sd[3]            ; 9.597  ;    ;    ; 9.597  ;
+; gpmc_oe_n          ; sd[4]            ; 10.721 ;    ;    ; 10.721 ;
+; gpmc_oe_n          ; sd[5]            ; 10.721 ;    ;    ; 10.721 ;
+; gpmc_oe_n          ; sd[6]            ; 10.721 ;    ;    ; 10.721 ;
+; gpmc_oe_n          ; sd[7]            ; 10.721 ;    ;    ; 10.721 ;
+; pwr_12v_fail       ; io_led_charge    ; 9.499  ;    ;    ; 9.499  ;
+; pwr_12v_fail       ; io_led_discharge ; 9.499  ;    ;    ; 9.499  ;
+; pwr_12v_fail       ; io_led_pwr       ; 7.691  ;    ;    ; 7.691  ;
+; pwr_12v_fail       ; irq_cpld[1]      ; 8.538  ;    ;    ; 8.538  ;
+; pwr_charge_over    ; io_led_charge    ; 8.234  ;    ;    ; 8.234  ;
+; pwr_charge_over    ; io_led_discharge ; 8.233  ;    ;    ; 8.233  ;
+; pwr_discharge_over ; io_led_charge    ; 9.388  ;    ;    ; 9.388  ;
+; pwr_discharge_over ; io_led_discharge ; 9.387  ;    ;    ; 9.387  ;
+; sa[0]              ; sd[0]            ; 14.155 ;    ;    ; 14.155 ;
+; sa[0]              ; sd[1]            ; 14.518 ;    ;    ; 14.518 ;
+; sa[0]              ; sd[2]            ; 14.576 ;    ;    ; 14.576 ;
+; sa[0]              ; sd[3]            ; 14.187 ;    ;    ; 14.187 ;
+; sa[1]              ; sd[0]            ; 11.907 ;    ;    ; 11.907 ;
+; sa[1]              ; sd[1]            ; 11.907 ;    ;    ; 11.907 ;
+; sa[1]              ; sd[2]            ; 11.907 ;    ;    ; 11.907 ;
+; sa[1]              ; sd[3]            ; 11.907 ;    ;    ; 11.907 ;
+; sa[1]              ; sd[4]            ; 13.031 ;    ;    ; 13.031 ;
+; sa[1]              ; sd[5]            ; 13.031 ;    ;    ; 13.031 ;
+; sa[1]              ; sd[6]            ; 13.031 ;    ;    ; 13.031 ;
+; sa[1]              ; sd[7]            ; 13.031 ;    ;    ; 13.031 ;
+; sa[2]              ; sd[0]            ; 13.013 ;    ;    ; 13.013 ;
+; sa[2]              ; sd[1]            ; 13.013 ;    ;    ; 13.013 ;
+; sa[2]              ; sd[2]            ; 13.013 ;    ;    ; 13.013 ;
+; sa[2]              ; sd[3]            ; 13.013 ;    ;    ; 13.013 ;
+; sa[2]              ; sd[4]            ; 14.137 ;    ;    ; 14.137 ;
+; sa[2]              ; sd[5]            ; 14.137 ;    ;    ; 14.137 ;
+; sa[2]              ; sd[6]            ; 14.137 ;    ;    ; 14.137 ;
+; sa[2]              ; sd[7]            ; 14.137 ;    ;    ; 14.137 ;
+; sa[3]              ; sd[0]            ; 10.555 ;    ;    ; 10.555 ;
+; sa[3]              ; sd[1]            ; 10.555 ;    ;    ; 10.555 ;
+; sa[3]              ; sd[2]            ; 10.555 ;    ;    ; 10.555 ;
+; sa[3]              ; sd[3]            ; 10.555 ;    ;    ; 10.555 ;
+; sa[3]              ; sd[4]            ; 11.679 ;    ;    ; 11.679 ;
+; sa[3]              ; sd[5]            ; 11.679 ;    ;    ; 11.679 ;
+; sa[3]              ; sd[6]            ; 11.679 ;    ;    ; 11.679 ;
+; sa[3]              ; sd[7]            ; 11.679 ;    ;    ; 11.679 ;
+; sa[4]              ; sd[0]            ; 13.345 ;    ;    ; 13.345 ;
+; sa[4]              ; sd[1]            ; 13.345 ;    ;    ; 13.345 ;
+; sa[4]              ; sd[2]            ; 13.345 ;    ;    ; 13.345 ;
+; sa[4]              ; sd[3]            ; 13.345 ;    ;    ; 13.345 ;
+; sa[4]              ; sd[4]            ; 14.469 ;    ;    ; 14.469 ;
+; sa[4]              ; sd[5]            ; 14.469 ;    ;    ; 14.469 ;
+; sa[4]              ; sd[6]            ; 14.469 ;    ;    ; 14.469 ;
+; sa[4]              ; sd[7]            ; 14.469 ;    ;    ; 14.469 ;
+; sa[5]              ; sd[0]            ; 12.971 ;    ;    ; 12.971 ;
+; sa[5]              ; sd[1]            ; 12.971 ;    ;    ; 12.971 ;
+; sa[5]              ; sd[2]            ; 12.971 ;    ;    ; 12.971 ;
+; sa[5]              ; sd[3]            ; 12.971 ;    ;    ; 12.971 ;
+; sa[5]              ; sd[4]            ; 14.095 ;    ;    ; 14.095 ;
+; sa[5]              ; sd[5]            ; 14.095 ;    ;    ; 14.095 ;
+; sa[5]              ; sd[6]            ; 14.095 ;    ;    ; 14.095 ;
+; sa[5]              ; sd[7]            ; 14.095 ;    ;    ; 14.095 ;
+; sa[6]              ; sd[0]            ; 13.364 ;    ;    ; 13.364 ;
+; sa[6]              ; sd[1]            ; 13.364 ;    ;    ; 13.364 ;
+; sa[6]              ; sd[2]            ; 13.364 ;    ;    ; 13.364 ;
+; sa[6]              ; sd[3]            ; 13.364 ;    ;    ; 13.364 ;
+; sa[6]              ; sd[4]            ; 14.488 ;    ;    ; 14.488 ;
+; sa[6]              ; sd[5]            ; 14.488 ;    ;    ; 14.488 ;
+; sa[6]              ; sd[6]            ; 14.488 ;    ;    ; 14.488 ;
+; sa[6]              ; sd[7]            ; 14.488 ;    ;    ; 14.488 ;
+; sa[7]              ; sd[0]            ; 12.332 ;    ;    ; 12.332 ;
+; sa[7]              ; sd[1]            ; 12.332 ;    ;    ; 12.332 ;
+; sa[7]              ; sd[2]            ; 12.332 ;    ;    ; 12.332 ;
+; sa[7]              ; sd[3]            ; 12.332 ;    ;    ; 12.332 ;
+; sa[7]              ; sd[4]            ; 13.456 ;    ;    ; 13.456 ;
+; sa[7]              ; sd[5]            ; 13.456 ;    ;    ; 13.456 ;
+; sa[7]              ; sd[6]            ; 13.456 ;    ;    ; 13.456 ;
+; sa[7]              ; sd[7]            ; 13.456 ;    ;    ; 13.456 ;
+; sys_reset_n        ; pcie_rst_n       ; 8.364  ;    ;    ; 8.364  ;
+; sys_reset_n        ; rst_out_n        ; 8.366  ;    ;    ; 8.366  ;
 +--------------------+------------------+--------+----+----+--------+
 
 
@@ -804,7 +804,7 @@ No paths to report.
 +-----------+------------+-------+------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+------+------------+-----------------+
-; esam_data ; fpga_clk   ; 7.849 ;      ; Rise       ; fpga_clk        ;
+; esam_data ; fpga_clk   ; 8.925 ;      ; Rise       ; fpga_clk        ;
 +-----------+------------+-------+------+------------+-----------------+
 
 
@@ -813,7 +813,7 @@ No paths to report.
 +-----------+------------+-------+------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+------+------------+-----------------+
-; esam_data ; fpga_clk   ; 7.849 ;      ; Rise       ; fpga_clk        ;
+; esam_data ; fpga_clk   ; 8.925 ;      ; Rise       ; fpga_clk        ;
 +-----------+------------+-------+------+------------+-----------------+
 
 
@@ -822,7 +822,7 @@ No paths to report.
 +-----------+------------+-----------+-----------+------------+-----------------+
 ; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
 +-----------+------------+-----------+-----------+------------+-----------------+
-; esam_data ; fpga_clk   ; 7.849     ;           ; Rise       ; fpga_clk        ;
+; esam_data ; fpga_clk   ; 8.925     ;           ; Rise       ; fpga_clk        ;
 +-----------+------------+-----------+-----------+------------+-----------------+
 
 
@@ -831,7 +831,7 @@ No paths to report.
 +-----------+------------+-----------+-----------+------------+-----------------+
 ; Data Port ; Clock Port ; 0 to Hi-Z ; 1 to Hi-Z ; Clock Edge ; Clock Reference ;
 +-----------+------------+-----------+-----------+------------+-----------------+
-; esam_data ; fpga_clk   ; 7.849     ;           ; Rise       ; fpga_clk        ;
+; esam_data ; fpga_clk   ; 8.925     ;           ; Rise       ; fpga_clk        ;
 +-----------+------------+-----------+-----------+------------+-----------------+
 
 
@@ -887,7 +887,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Full Version
-    Info: Processing started: Thu Jul 28 16:50:59 2016
+    Info: Processing started: Tue Aug 23 15:40:32 2016
 Info: Command: quartus_sta dca_270 -c dca_270
 Info: qsta_default_script.tcl version: #1
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
@@ -898,14 +898,14 @@ Info (306005): Delay annotation completed successfully
 Info (332104): Reading SDC File: 'dca_270.sdc'
 Warning (332060): Node: clk_1mhz_reg was determined to be a clock but was found without an associated clock assignment.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
-Info (332146): Worst-case setup slack is 31.971
+Info (332146): Worst-case setup slack is 30.966
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    31.971         0.000 fpga_clk 
-Info (332146): Worst-case hold slack is 1.667
+    Info (332119):    30.966         0.000 fpga_clk 
+Info (332146): Worst-case hold slack is 1.639
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):     1.667         0.000 fpga_clk 
+    Info (332119):     1.639         0.000 fpga_clk 
 Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332146): Worst-case minimum pulse width slack is 20.567
@@ -917,7 +917,7 @@ Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 1 warning
     Info: Peak virtual memory: 451 megabytes
-    Info: Processing ended: Thu Jul 28 16:51:00 2016
+    Info: Processing ended: Tue Aug 23 15:40:33 2016
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

@@ -209,8 +209,8 @@ io_led_pwr <= irq_cpld[1].DB_MAX_OUTPUT_PORT_TYPE
 lcd_pwen <= lvds_reg[1].DB_MAX_OUTPUT_PORT_TYPE
 lcd_bl_en <= lvds_reg[2].DB_MAX_OUTPUT_PORT_TYPE
 lvds_pwen <= lvds_reg[0].DB_MAX_OUTPUT_PORT_TYPE
-io_led_charge <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
-io_led_discharge <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+io_led_charge <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+io_led_discharge <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
 sd[0] <> sd[0]
 sd[1] <> sd[1]
 sd[2] <> sd[2]
